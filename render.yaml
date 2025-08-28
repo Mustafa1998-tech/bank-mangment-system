@@ -23,6 +23,7 @@ services:
         value: https://bank-management-web.onrender.com
       - key: ASPNETCORE_URLS
         value: http://+:10000
+    startCommand: dotnet BankManagement.API.dll
     autoDeploy: true
     plan: free
     numInstances: 1
@@ -36,10 +37,12 @@ services:
       cd frontend/web && \
       npm install && \
       npm run build
-    staticPublishPath: ./frontend/web/dist
+    staticPublishPath: frontend/web/dist
     envVars:
       - key: VITE_API_URL
         value: https://bank-management-api.onrender.com
+      - key: NODE_ENV
+        value: production
     routes:
       - type: rewrite
         source: "/*"
