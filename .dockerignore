@@ -3,25 +3,29 @@
 # ==============================================
 
 # Git
-.git
-.gitignore
-.gitattributes
+**/.git
+**/.gitignore
+**/.dockerignore
+**/.gitattributes
+**/.gitmodules
 
 # Environment files (except .env.example)
-.env
-.env.*
+**/.env
+**/appsettings.*.json
+!**/appsettings.json
 !.env.example
 
 # Node.js
-node_modules/
+**/node_modules/
 npm-debug.log
 yarn-error.log
 
 # Build outputs
-bin/
-obj/
+**/bin/
+**/obj/
+**/dist/
+**/wwwroot
 build/
-dist/
 out/
 
 # Logs
@@ -29,9 +33,9 @@ logs/
 *.log
 
 # IDE and editor files
-.vscode/
-.vs/
-.idea/
+**/.vs
+**/.vscode
+**/.idea
 *.suo
 *.user
 *.userosscache
@@ -48,11 +52,17 @@ Thumbs.db
 
 # Docker
 .docker/
-.dockerignore
+**/Dockerfile
+**/Dockerfile.*
+!Dockerfile.prod
+**/docker-compose.*
+**/docker-compose*
 
 # Local development settings
-appsettings.Development.json
-appsettings.Local.json
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/Properties/launchSettings.json
+local.settings.json
 
 # Test results
 TestResults/
@@ -111,42 +121,6 @@ build/
 **/[Tt]est[Rr]esult*/
 **/[Bb]uild[Ll]og.*
 
-# Local development settings
-local.settings.json
-
-# Azure Functions localsettings file
-local.settings.json
-
-# User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-build/
-
-# Visual Studio 2015/2017 cache/options directory
-.vs/
-
-# Visual Studio 2017 auto generated files
-Generated\ Files/
-
-# MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-
-# NUnit, xUnit, etc
-**/[Tt]est[Rr]esult*/
-**/[Bb]uild[Ll]og.*
-
 # JetBrains Rider
 .idea/
 *.sln.iml
@@ -158,20 +132,6 @@ Generated\ Files/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Visual Studio 2017 auto generated files
-Generated\ Files/
-
-# MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-
-# NUnit, xUnit, etc
-**/[Tt]est[Rr]esult*/
-**/[Bb]uild[Ll]og.*
-
-# Local development settings
-local.settings.json
-
 # Azure Functions localsettings file
 local.settings.json
 
@@ -181,3 +141,7 @@ local.settings.json
 *.user
 *.userosscache
 *.sln.docstates
+
+# README and LICENSE files
+**/README.md
+**/LICENSE
