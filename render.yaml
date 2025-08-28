@@ -22,8 +22,12 @@ services:
       - key: CORS__AllowedOrigins
         value: https://bank-management-web.onrender.com
       - key: ASPNETCORE_URLS
-        value: http://+:10000
+        value: http://*:10000
     startCommand: dotnet BankManagement.API.dll
+    dockerCommand: ""
+    dockerContext: ./backend/BankManagement.API
+    dockerBuildCommand: docker build -t bank-management-api .
+    dockerStartCommand: docker run -p 10000:10000 bank-management-api
     autoDeploy: true
     plan: free
     numInstances: 1
