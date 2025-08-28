@@ -1,0 +1,183 @@
+# ==============================================
+# Bank Management System - Docker Ignore File
+# ==============================================
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Environment files (except .env.example)
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+bin/
+obj/
+build/
+dist/
+out/
+
+# Logs
+logs/
+*.log
+
+# IDE and editor files
+.vscode/
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker
+.docker/
+.dockerignore
+
+# Local development settings
+appsettings.Development.json
+appsettings.Local.json
+
+# Test results
+TestResults/
+coverage/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# Debug files
+*.pdb
+*.exe
+*.dll
+*.xml
+*.json
+*.dll.config
+*.pdb
+*.exe.config
+
+# NuGet packages directory
+.nuget/
+
+# Local development tools
+.vs/
+
+# Visual Studio user-specific files
+*.userprefs
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+
+# Visual Studio cache/options directory
+.vs/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit, xUnit, etc
+**/[Tt]est[Rr]esult*/
+**/[Bb]uild[Ll]og.*
+
+# Local development settings
+local.settings.json
+
+# Azure Functions localsettings file
+local.settings.json
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+# Visual Studio 2017 auto generated files
+Generated\ Files/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit, xUnit, etc
+**/[Tt]est[Rr]esult*/
+**/[Bb]uild[Ll]og.*
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio 2017 auto generated files
+Generated\ Files/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit, xUnit, etc
+**/[Tt]est[Rr]esult*/
+**/[Bb]uild[Ll]og.*
+
+# Local development settings
+local.settings.json
+
+# Azure Functions localsettings file
+local.settings.json
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

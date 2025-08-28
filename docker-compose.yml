@@ -1,0 +1,81 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: bank-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=BankSystem2025@Passw0rd
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+      - ./database/backup:/var/opt/backup
+    networks:
+      - bank-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P 'BankSystem2025@Passw0rd' -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 15
+      start_period: 90s
+
+  backend:
+    build:
+      context: ./backend/BankManagement.API
+      dockerfile: Dockerfile
+    container_name: bank-backend
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=BankDB;User Id=sa;Password=BankSystem2025@Passw0rd;TrustServerCertificate=True;MultipleActiveResultSets=True;Encrypt=True
+      - JWT__SecretKey=bskmsMUSSUPERr123!
+      - ENCRYPTION_KEY=3SDHGAnbgh8kkj5123!
+      - CORS__AllowedOrigins=http://localhost:3000,http://localhost:80
+    ports:
+      - "5000:80"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    networks:
+      - bank-network
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+      - ./uploads:/app/uploads
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:80/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  frontend:
+    build:
+      context: ./frontend/web
+      dockerfile: Dockerfile
+    container_name: bank-frontend
+    environment:
+      - NODE_ENV=production
+      - VITE_API_URL=/api
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - bank-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+networks:
+  bank-network:
+    driver: bridge
+
+volumes:
+  sqlserver_data:
+    driver: local

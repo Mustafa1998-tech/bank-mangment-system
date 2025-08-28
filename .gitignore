@@ -1,0 +1,6 @@
+data/sqlserver/log/
+node_modules/
+.env
+.vscode/
+bin/
+obj/

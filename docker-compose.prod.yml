@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:14-alpine
+    container_name: bank-postgres-prod
+    environment:
+      POSTGRES_DB: ${DB_NAME:-bankmanagement}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-ChangeMe123!}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_prod:/var/lib/postgresql/data
+    networks:
+      - bank-network-prod
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend/BankManagement.API
+      dockerfile: Dockerfile
+      target: production
+    container_name: bank-backend-prod
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=$${POSTGRES_DB};Username=$${POSTGRES_USER};Password=$${POSTGRES_PASSWORD}
+      - JWT__SecretKey=${JWT__SecretKey}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+      - CORS__AllowedOrigins=${CORS__AllowedOrigINS}
+      - ASPNETCORE_URLS=http://+:8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - bank-network-prod
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+      - ./uploads:/app/uploads
+
+  # Frontend Web Application
+  frontend:
+    build:
+      context: ./frontend/web
+      dockerfile: Dockerfile
+      target: production
+    container_name: bank-frontend-prod
+    environment:
+      - VITE_API_URL=${VITE_API_URL}
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - bank-network-prod
+    restart: unless-stopped
+
+networks:
+  bank-network-prod:
+    driver: bridge
+
+volumes:
+  postgres_data_prod:
+  logs:
+  uploads:

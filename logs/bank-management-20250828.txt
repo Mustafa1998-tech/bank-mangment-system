@@ -1,0 +1,422 @@
+[2025-08-28 00:44:31.683 +00:00 INF] Ensuring database is created... {"SourceContext":"Program"}
+[2025-08-28 00:44:36.179 +00:00 INF] Database initialization complete2025-08-28 00:44:36.179 +00:00 [INF] Databa[2025-08-28 00:44:36.183 +00:00 INF] Bank2025-08-28 00:44:36.183 +00:00 [INF] Bank Manag[2025-08-28 00:44:36.185 +00:00 INF] E2025-08-28 00:44:36.185 +00[2025-08-28 00:44:36.188 +00:00 INF2025-08-28 00:44:36.188 +00:00 [INF] Sw[2025-08-28 00:44:36.196 +00:00 2025-08-28 00:44:36.196 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+2025-08-28 00:44:36.252 +00:00 [INF] Now listening on: http://[::]:80
+2025-08-28 00:44:36.254 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 00:44:36.256 +00:00 [INF] Hosting environment: Development
+2025-08-28 00:44:36.257 +00:00 [INF] Content root path: /app
+2025-08-28 00:46:32.473 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-08-28 00:46:32.478 +00:00 [INF] Request: GET / from ::ffff:172.18.0.1
+2025-08-28 00:46:32.501 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 00:46:32.512 +00:00 [ERR] Unhandled exception occurred
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 00:46:32.549 +00:00 [INF] Response: 500 for GET /
+2025-08-28 00:46:32.655 +00:00 [INF] Request: GET /favicon.ico from ::ffff:172.18.0.1
+2025-08-28 00:46:32.664 +00:00 [INF] Response: 404 for GET /favicon.ico
+2025-08-28 00:47:34.465 +00:00 [INF] Application is shutting down...
+00001","RequestPath":"/","ConnectionId":"0HNF5PHALD8EP"}
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2025-08-28 00:46:32.549 +00:00 INF] Response: 500 for GET / {"SourceContext":"Program","RequestId":"0HNF5PHALD8EP:00000001","RequestPath":"/","ConnectionId":"0HNF5PHALD8EP"}
+[2025-08-28 00:46:32.655 +00:00 INF] Request: GET /favicon.ico from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5PHALD8EP:00000002","RequestPath":"/favicon.ico","ConnectionId":"0HNF5PHALD8EP"}
+[2025-08-28 00:46:32.664 +00:00 INF] Response: 404 for GET /favicon.ico {"SourceContext":"Program","RequestId":"0HNF5PHALD8EP:00000002","RequestPath":"/favicon.ico","ConnectionId":"0HNF5PHALD8EP"}
+[2025-08-28 00:47:34.465 +00:00 INF] Application is shutting down... {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[2025-08-28 00:48:13.743 +00:00 INF] Ensuring database is created... {"SourceContext":"Program"}
+[2025-08-28 00:48:15.388 +00:00 INF] Database initialization complete2025-08-28 00:48:15.388 +00:00 [INF] Databa[2025-08-28 00:48:15.403 +00:00 INF] Bank2025-08-28 00:48:15.403 +00:00 [INF] Bank Manag[2025-08-28 00:48:15.436 +00:00 INF] E2025-08-28 00:48:15.436 +00[2025-08-28 00:48:15.439 +00:00 INF2025-08-28 00:48:15.439 +00:00 [INF] Sw[2025-08-28 00:48:15.448 +00:00 2025-08-28 00:48:15.448 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+2025-08-28 00:48:15.494 +00:00 [INF] Now listening on: http://[::]:80
+2025-08-28 00:48:15.495 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 00:48:15.496 +00:00 [INF] Hosting environment: Development
+2025-08-28 00:48:15.497 +00:00 [INF] Content root path: /app
+2025-08-28 00:48:57.771 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-08-28 00:48:58.094 +00:00 [INF] Request: GET / from ::ffff:172.18.0.1
+2025-08-28 00:48:58.381 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 00:48:58.399 +00:00 [ERR] Unhandled exception occurred
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 00:48:58.432 +00:00 [INF] Response: 500 for GET /
+Impl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2025-08-28 00:48:58.399 +00:00 ERR] Unhandled exception occurred {"SourceContext":"Program","RequestId":"0HNF5PILV5F9I:00000001","RequestPath":"/","ConnectionId":"0HNF5PILV5F9I"}
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2025-08-28 00:48:58.432 +00:00 INF] Response: 500 for GET / {"SourceContext":"Program","RequestId":"0HNF5PILV5F9I:00000001","RequestPath":"/","ConnectionId":"0HNF5PILV5F9I"}
+[2025-08-28 01:57:51.545 +00:00 INF] Ensuring database is created... {"SourceContext":"Program"}
+[2025-08-28 01:57:54.864 +00:00 INF] Database initialization complete2025-08-28 01:57:54.864 +00:00 [INF] Databa[2025-08-28 01:57:54.871 +00:00 INF] Bank2025-08-28 01:57:54.871 +00:00 [INF] Bank Manag[2025-08-28 01:57:54.876 +00:00 INF] E2025-08-28 01:57:54.876 +00[2025-08-28 01:57:54.881 +00:00 INF2025-08-28 01:57:54.881 +00:00 [INF] Sw[2025-08-28 01:57:54.897 +00:00 2025-08-28 01:57:54.897 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+2025-08-28 01:57:55.003 +00:00 [INF] Now listening on: http://[::]:80
+2025-08-28 01:57:55.006 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 01:57:55.009 +00:00 [INF] Hosting environment: Development
+2025-08-28 01:57:55.012 +00:00 [INF] Content root path: /app
+2025-08-28 02:02:02.249 +00:00 [INF] Application is shutting down...
+28 01:57:55.009 +00:00 INF] Hosting environment: Development {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[2025-08-28 01:57:55.012 +00:00 INF] Content root path: /app {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[2025-08-28 02:02:02.249 +00:00 INF] Application is shutting down... {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[2025-08-28 02:05:19.979 +00:00 INF] Ensuring database is created... {"SourceContext":"Program"}
+[2025-08-28 02:05:22.232 +00:00 INF] Database initialization complete2025-08-28 02:05:22.232 +00:00 [INF] Databa[2025-08-28 02:05:22.240 +00:00 INF] Bank2025-08-28 02:05:22.240 +00:00 [INF] Bank Manag[2025-08-28 02:05:22.245 +00:00 INF] E2025-08-28 02:05:22.245 +00[2025-08-28 02:05:22.250 +00:00 INF2025-08-28 02:05:22.250 +00:00 [INF] Sw[2025-08-28 02:05:22.266 +00:00 2025-08-28 02:05:22.266 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+2025-08-28 02:05:22.340 +00:00 [INF] Now listening on: http://[::]:80
+2025-08-28 02:05:22.342 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 02:05:22.343 +00:00 [INF] Hosting environment: Development
+2025-08-28 02:05:22.347 +00:00 [INF] Content root path: /app
+2025-08-28 02:08:50.346 +00:00 [INF] Application is shutting down...
+28 02:05:22.343 +00:00 INF] Hosting environment: Development {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[2025-08-28 02:05:22.347 +00:00 INF] Content root path: /app {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[2025-08-28 02:08:50.346 +00:00 INF] Application is shutting down... {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[2025-08-28 02:09:34.903 +00:00 INF] Ensuring database is created... {"SourceContext":"Program"}
+[2025-08-28 02:09:36.591 +00:00 INF] Database initialization complete2025-08-28 02:09:36.591 +00:00 [INF] Databa[2025-08-28 02:09:36.597 +00:00 INF] Bank2025-08-28 02:09:36.597 +00:00 [INF] Bank Manag[2025-08-28 02:09:36.601 +00:00 INF] E2025-08-28 02:09:36.601 +00[2025-08-28 02:09:36.605 +00:00 INF2025-08-28 02:09:36.605 +00:00 [INF] Sw[2025-08-28 02:09:36.622 +00:00 2025-08-28 02:09:36.622 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+2025-08-28 02:09:36.687 +00:00 [INF] Now listening on: http://[::]:80
+2025-08-28 02:09:36.692 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 02:09:36.693 +00:00 [INF] Hosting environment: Development
+2025-08-28 02:09:36.694 +00:00 [INF] Content root path: /app
+2025-08-28 02:10:41.526 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-08-28 02:10:41.544 +00:00 [INF] Request: GET / from ::ffff:172.18.0.1
+2025-08-28 02:10:41.586 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:10:41.611 +00:00 [ERR] Unhandled exception occurred
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:10:41.669 +00:00 [INF] Response: 500 for GET /
+2025-08-28 02:10:41.739 +00:00 [INF] Request: GET /favicon.ico from ::ffff:172.18.0.1
+2025-08-28 02:10:41.747 +00:00 [INF] Response: 404 for GET /favicon.ico
+2025-08-28 02:14:38.996 +00:00 [INF] Request: GET / from ::ffff:172.18.0.1
+2025-08-28 02:14:39.002 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:14:39.011 +00:00 [ERR] Unhandled exception occurred
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:14:39.029 +00:00 [INF] Response: 500 for GET /
+2025-08-28 02:14:40.009 +00:00 [INF] Request: GET / from ::ffff:172.18.0.1
+2025-08-28 02:14:40.011 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:14:40.016 +00:00 [ERR] Unhandled exception occurred
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:14:40.030 +00:00 [INF] Response: 500 for GET /
+2025-08-28 02:15:39.024 +00:00 [INF] Request: GET / from ::ffff:172.18.0.1
+2025-08-28 02:15:39.028 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:15:39.038 +00:00 [ERR] Unhandled exception occurred
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:15:39.073 +00:00 [INF] Response: 500 for GET /
+2025-08-28 02:17:05.172 +00:00 [INF] Request: GET / from ::ffff:172.18.0.1
+2025-08-28 02:17:05.180 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:17:05.183 +00:00 [ERR] Unhandled exception occurred
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-28 02:17:05.195 +00:00 [INF] Response: 500 for GET /
+2025-08-28 02:17:05.271 +00:00 [INF] Request: GET /favicon.ico from ::ffff:172.18.0.1
+2025-08-28 02:17:05.319 +00:00 [INF] Response: 404 for GET /favicon.ico
+2025-08-28 02:17:12.508 +00:00 [INF] Request: GET /health from ::ffff:172.18.0.1
+2025-08-28 02:17:12.522 +00:00 [INF] Response: 200 for GET /health
+2025-08-28 02:20:44.214 +00:00 [INF] Application is shutting down...
+ore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2025-08-28 02:15:39.038 +00:00 ERR] Unhandled exception occurred {"SourceContext":"Program","RequestId":"0HNF5R0BCF6H2:00000001","RequestPath":"/","ConnectionId":"0HNF5R0BCF6H2"}
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2025-08-28 02:15:39.073 +00:00 INF] Response: 500 for GET / {"SourceContext":"Program","RequestId":"0HNF5R0BCF6H2:00000001","RequestPath":"/","ConnectionId":"0HNF5R0BCF6H2"}
+[2025-08-28 02:17:05.172 +00:00 INF] Request: GET / from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R0BCF6H5:00000001","RequestPath":"/","ConnectionId":"0HNF5R0BCF6H5"}
+[2025-08-28 02:17:05.180 +00:00 ERR] An unhandled exception has occurred while executing the request. {"EventId":{"Id":1,"Name":"UnhandledException"},"SourceContext":"Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware","RequestId":"0HNF5R0BCF6H5:00000001","RequestPath":"/","ConnectionId":"0HNF5R0BCF6H5"}
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2025-08-28 02:17:05.183 +00:00 ERR] Unhandled exception occurred {"SourceContext":"Program","RequestId":"0HNF5R0BCF6H5:00000001","RequestPath":"/","ConnectionId":"0HNF5R0BCF6H5"}
+System.IO.FileNotFoundException: Could not find file: wwwroot/health.html.
+File name: 'wwwroot/health.html'
+   at Microsoft.AspNetCore.Http.HttpResults.VirtualFileHttpResult.ExecuteAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+[2025-08-28 02:17:05.195 +00:00 INF] Response: 500 for GET / {"SourceContext":"Program","RequestId":"0HNF5R0BCF6H5:00000001","RequestPath":"/","ConnectionId":"0HNF5R0BCF6H5"}
+[2025-08-28 02:17:05.271 +00:00 INF] Request: GET /favicon.ico from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R0BCF6H5:00000002","RequestPath":"/favicon.ico","ConnectionId":"0HNF5R0BCF6H5"}
+[2025-08-28 02:17:05.319 +00:00 INF] Response: 404 for GET /favicon.ico {"SourceContext":"Program","RequestId":"0HNF5R0BCF6H5:00000002","RequestPath":"/favicon.ico","ConnectionId":"0HNF5R0BCF6H5"}
+[2025-08-28 02:17:12.508 +00:00 INF] Request: GET /health from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R0BCF6H5:00000005","RequestPath":"/health","ConnectionId":"0HNF5R0BCF6H5"}
+[2025-08-28 02:17:12.522 +00:00 INF] Response: 200 for GET /health {"SourceContext":"Program","RequestId":"0HNF5R0BCF6H5:00000005","RequestPath":"/health","ConnectionId":"0HNF5R0BCF6H5"}
+[2025-08-28 02:20:44.214 +00:00 INF] Application is shutting down... {"SourceContext":"Microsoft.Hosting.Lifetime"}
+[2025-08-28 02:21:38.693 +00:00 INF] Ensuring database is created... {"SourceContext":"Program"}
+[2025-08-28 02:21:38.896 +00:00 INF] Database initialization complete2025-08-28 02:21:38.896 +00:00 [INF] Databa[2025-08-28 02:21:38.902 +00:00 INF] Bank2025-08-28 02:21:38.902 +00:00 [INF] Bank Manag[2025-08-28 02:21:38.908 +00:00 INF] E2025-08-28 02:21:38.908 +00[2025-08-28 02:21:38.911 +00:00 INF2025-08-28 02:21:38.911 +00:00 [INF] Sw[2025-08-28 02:21:38.926 +00:00 2025-08-28 02:21:38.926 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+2025-08-28 02:21:38.988 +00:00 [INF] Now listening on: http://[::]:80
+2025-08-28 02:21:38.989 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-28 02:21:38.991 +00:00 [INF] Hosting environment: Development
+2025-08-28 02:21:38.992 +00:00 [INF] Content root path: /app
+2025-08-28 02:21:47.537 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-08-28 02:21:47.547 +00:00 [INF] Request: GET / from ::ffff:172.18.0.1
+2025-08-28 02:21:47.588 +00:00 [INF] Response: 200 for GET /
+2025-08-28 02:25:27.467 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:25:27.681 +00:00 [INF] Response: 415 for POST /api/accounts
+2025-08-28 02:26:10.329 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:26:10.375 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:26:33.372 +00:00 [INF] Request: GET /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:26:33.761 +00:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-08-28 02:26:34.012 +00:00 [INF] Response: 200 for GET /api/accounts
+2025-08-28 02:26:42.602 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:26:42.605 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:27:00.856 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:27:00.859 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:27:23.623 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:27:23.633 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:27:29.398 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:27:29.401 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:28:18.156 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:28:18.162 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:28:18.657 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:28:18.661 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:28:19.178 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:28:19.183 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:28:20.128 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:28:20.131 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:28:20.522 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:28:20.524 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:28:20.989 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:28:20.990 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:28:20.156 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:28:20.158 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:28:20.557 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:28:20.559 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:29:27.736 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:27.741 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:27.832 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:27.835 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:27.928 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:27.931 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:28.024 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:28.029 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:28.131 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:28.135 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:28.233 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:28.236 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:28.336 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:28.340 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:28.434 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:28.437 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:28.535 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:28.539 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:28.638 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:29:28.642 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:29:28.734 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:28.736 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:28.818 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:28.824 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:28.912 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:29:28.916 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:29:29.007 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:29.012 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:29.098 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:29.099 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:29.189 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:29:29.191 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:29:29.281 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:29.282 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:29.367 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:29.369 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:29.471 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:29:29.476 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:29:29.572 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:29.573 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:29.645 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:29.647 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:29.742 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:29:29.743 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:29:29.834 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:29.836 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:29.910 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:29.912 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:29.995 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:29:29.998 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:29:30.084 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:30.086 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:30.191 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:30.192 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:30.266 +00:00 [INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1
+2025-08-28 02:29:30.267 +00:00 [INF] Response: 405 for POST /api/transactions/transfer
+2025-08-28 02:29:30.346 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:30.349 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:29:30.434 +00:00 [INF] Request: POST /api/transactions from ::ffff:172.18.0.1
+2025-08-28 02:29:30.436 +00:00 [INF] Response: 404 for POST /api/transactions
+2025-08-28 02:30:34.193 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:34.205 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:30:35.112 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:35.119 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:30:35.420 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:35.423 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:30:35.705 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:35.708 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:30:35.959 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:35.963 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:30:36.228 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:36.232 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:30:36.491 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:36.494 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:30:36.739 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:36.742 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:30:36.986 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:36.991 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:30:37.237 +00:00 [INF] Request: POST /api/accounts from ::ffff:172.18.0.1
+2025-08-28 02:30:37.240 +00:00 [INF] Response: 400 for POST /api/accounts
+2025-08-28 02:31:36.359 +00:00 [INF] Request: GET /api/health from ::ffff:172.18.0.1
+2025-08-28 02:31:36.360 +00:00 [INF] Response: 404 for GET /api/health
+2025-08-28 02:31:55.778 +00:00 [INF] Request: GET /api/health from ::ffff:172.18.0.1
+2025-08-28 02:31:55.784 +00:00 [INF] Response: 404 for GET /api/health
+2025-08-28 02:32:11.963 +00:00 [INF] Request: GET /health from ::ffff:172.18.0.1
+2025-08-28 02:32:11.970 +00:00 [INF] Response: 200 for GET /health
+2025-08-28 02:32:23.077 +00:00 [INF] Request: GET /api/health from ::ffff:172.18.0.1
+2025-08-28 02:32:23.082 +00:00 [INF] Response: 404 for GET /api/health
+2025-08-28 02:32:35.818 +00:00 [INF] Request: GET /health from ::ffff:172.18.0.1
+2025-08-28 02:32:35.826 +00:00 [INF] Response: 200 for GET /health
+nectionId":"0HNF5R6HSA753"}
+[2025-08-28 02:29:28.336 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA754:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA754"}
+[2025-08-28 02:29:28.340 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA754:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA754"}
+[2025-08-28 02:29:28.434 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA755:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA755"}
+[2025-08-28 02:29:28.437 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA755:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA755"}
+[2025-08-28 02:29:28.535 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA756:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA756"}
+[2025-08-28 02:29:28.539 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA756:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA756"}
+[2025-08-28 02:29:28.638 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA757:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA757"}
+[2025-08-28 02:29:28.642 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA757:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA757"}
+[2025-08-28 02:29:28.734 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA758:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA758"}
+[2025-08-28 02:29:28.736 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA758:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA758"}
+[2025-08-28 02:29:28.818 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA759:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA759"}
+[2025-08-28 02:29:28.824 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA759:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA759"}
+[2025-08-28 02:29:28.912 +00:00 INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75A:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75A"}
+[2025-08-28 02:29:28.916 +00:00 INF] Response: 405 for POST /api/transactions/transfer {"SourceContext":"Program","RequestId":"0HNF5R6HSA75A:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75A"}
+[2025-08-28 02:29:29.007 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75B:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75B"}
+[2025-08-28 02:29:29.012 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75B:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75B"}
+[2025-08-28 02:29:29.098 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75C:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75C"}
+[2025-08-28 02:29:29.099 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75C:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75C"}
+[2025-08-28 02:29:29.189 +00:00 INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75D:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75D"}
+[2025-08-28 02:29:29.191 +00:00 INF] Response: 405 for POST /api/transactions/transfer {"SourceContext":"Program","RequestId":"0HNF5R6HSA75D:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75D"}
+[2025-08-28 02:29:29.281 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75E:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75E"}
+[2025-08-28 02:29:29.282 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75E:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75E"}
+[2025-08-28 02:29:29.367 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75F:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75F"}
+[2025-08-28 02:29:29.369 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75F:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75F"}
+[2025-08-28 02:29:29.471 +00:00 INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75G:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75G"}
+[2025-08-28 02:29:29.476 +00:00 INF] Response: 405 for POST /api/transactions/transfer {"SourceContext":"Program","RequestId":"0HNF5R6HSA75G:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75G"}
+[2025-08-28 02:29:29.572 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75H:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75H"}
+[2025-08-28 02:29:29.573 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75H:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75H"}
+[2025-08-28 02:29:29.645 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75I:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75I"}
+[2025-08-28 02:29:29.647 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75I:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75I"}
+[2025-08-28 02:29:29.742 +00:00 INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75J:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75J"}
+[2025-08-28 02:29:29.743 +00:00 INF] Response: 405 for POST /api/transactions/transfer {"SourceContext":"Program","RequestId":"0HNF5R6HSA75J:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75J"}
+[2025-08-28 02:29:29.834 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75K:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75K"}
+[2025-08-28 02:29:29.836 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75K:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75K"}
+[2025-08-28 02:29:29.910 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75L:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75L"}
+[2025-08-28 02:29:29.912 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75L:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75L"}
+[2025-08-28 02:29:29.995 +00:00 INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75M:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75M"}
+[2025-08-28 02:29:29.998 +00:00 INF] Response: 405 for POST /api/transactions/transfer {"SourceContext":"Program","RequestId":"0HNF5R6HSA75M:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75M"}
+[2025-08-28 02:29:30.084 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75N:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75N"}
+[2025-08-28 02:29:30.086 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75N:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75N"}
+[2025-08-28 02:29:30.191 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75O:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75O"}
+[2025-08-28 02:29:30.192 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75O:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75O"}
+[2025-08-28 02:29:30.266 +00:00 INF] Request: POST /api/transactions/transfer from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75P:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75P"}
+[2025-08-28 02:29:30.267 +00:00 INF] Response: 405 for POST /api/transactions/transfer {"SourceContext":"Program","RequestId":"0HNF5R6HSA75P:00000001","RequestPath":"/api/transactions/transfer","ConnectionId":"0HNF5R6HSA75P"}
+[2025-08-28 02:29:30.346 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75Q:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75Q"}
+[2025-08-28 02:29:30.349 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75Q:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75Q"}
+[2025-08-28 02:29:30.434 +00:00 INF] Request: POST /api/transactions from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75R:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75R"}
+[2025-08-28 02:29:30.436 +00:00 INF] Response: 404 for POST /api/transactions {"SourceContext":"Program","RequestId":"0HNF5R6HSA75R:00000001","RequestPath":"/api/transactions","ConnectionId":"0HNF5R6HSA75R"}
+[2025-08-28 02:30:34.193 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75S:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA75S"}
+[2025-08-28 02:30:34.205 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA75S:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA75S"}
+[2025-08-28 02:30:35.112 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75T:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA75T"}
+[2025-08-28 02:30:35.119 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA75T:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA75T"}
+[2025-08-28 02:30:35.420 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75U:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA75U"}
+[2025-08-28 02:30:35.423 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA75U:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA75U"}
+[2025-08-28 02:30:35.705 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA75V:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA75V"}
+[2025-08-28 02:30:35.708 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA75V:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA75V"}
+[2025-08-28 02:30:35.959 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA760:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA760"}
+[2025-08-28 02:30:35.963 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA760:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA760"}
+[2025-08-28 02:30:36.228 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA761:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA761"}
+[2025-08-28 02:30:36.232 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA761:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA761"}
+[2025-08-28 02:30:36.491 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA762:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA762"}
+[2025-08-28 02:30:36.494 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA762:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA762"}
+[2025-08-28 02:30:36.739 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA763:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA763"}
+[2025-08-28 02:30:36.742 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA763:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA763"}
+[2025-08-28 02:30:36.986 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA764:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA764"}
+[2025-08-28 02:30:36.991 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA764:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA764"}
+[2025-08-28 02:30:37.237 +00:00 INF] Request: POST /api/accounts from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA765:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA765"}
+[2025-08-28 02:30:37.240 +00:00 INF] Response: 400 for POST /api/accounts {"SourceContext":"Program","RequestId":"0HNF5R6HSA765:00000001","RequestPath":"/api/accounts","ConnectionId":"0HNF5R6HSA765"}
+[2025-08-28 02:31:36.359 +00:00 INF] Request: GET /api/health from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA766:00000001","RequestPath":"/api/health","ConnectionId":"0HNF5R6HSA766"}
+[2025-08-28 02:31:36.360 +00:00 INF] Response: 404 for GET /api/health {"SourceContext":"Program","RequestId":"0HNF5R6HSA766:00000001","RequestPath":"/api/health","ConnectionId":"0HNF5R6HSA766"}
+[2025-08-28 02:31:55.778 +00:00 INF] Request: GET /api/health from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA767:00000001","RequestPath":"/api/health","ConnectionId":"0HNF5R6HSA767"}
+[2025-08-28 02:31:55.784 +00:00 INF] Response: 404 for GET /api/health {"SourceContext":"Program","RequestId":"0HNF5R6HSA767:00000001","RequestPath":"/api/health","ConnectionId":"0HNF5R6HSA767"}
+[2025-08-28 02:32:11.963 +00:00 INF] Request: GET /health from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA768:00000001","RequestPath":"/health","ConnectionId":"0HNF5R6HSA768"}
+[2025-08-28 02:32:11.970 +00:00 INF] Response: 200 for GET /health {"SourceContext":"Program","RequestId":"0HNF5R6HSA768:00000001","RequestPath":"/health","ConnectionId":"0HNF5R6HSA768"}
+[2025-08-28 02:32:23.077 +00:00 INF] Request: GET /api/health from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA769:00000001","RequestPath":"/api/health","ConnectionId":"0HNF5R6HSA769"}
+[2025-08-28 02:32:23.082 +00:00 INF] Response: 404 for GET /api/health {"SourceContext":"Program","RequestId":"0HNF5R6HSA769:00000001","RequestPath":"/api/health","ConnectionId":"0HNF5R6HSA769"}
+[2025-08-28 02:32:35.818 +00:00 INF] Request: GET /health from ::ffff:172.18.0.1 {"SourceContext":"Program","RequestId":"0HNF5R6HSA76A:00000001","RequestPath":"/health","ConnectionId":"0HNF5R6HSA76A"}
+[2025-08-28 02:32:35.826 +00:00 INF] Response: 200 for GET /health {"SourceContext":"Program","RequestId":"0HNF5R6HSA76A:00000001","RequestPath":"/health","ConnectionId":"0HNF5R6HSA76A"}

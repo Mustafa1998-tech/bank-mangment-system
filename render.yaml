@@ -1,0 +1,82 @@
+services:
+  # Backend API Service
+  - type: web
+    name: bank-management-api
+    env: docker
+    build:
+      dockerfile: ./backend/BankManagement.API/Dockerfile
+      target: production
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        fromDatabase:
+          name: bankmanagement-db
+          property: connectionString
+      - key: JWT__SecretKey
+        generateValue: true
+        pattern: \w{32}
+      - key: ENCRYPTION_KEY
+        generateValue: true
+        pattern: \w{32}
+      - key: CORS__AllowedOrigins
+        value: https://bank-management-web.onrender.com
+      - key: ASPNETCORE_URLS
+        value: http://+:10000
+    autoDeploy: true
+    plan: free
+    numInstances: 1
+    healthCheckPath: /health
+    buildCommand: >
+      dotnet restore && \
+      dotnet publish -c Release -o out
+    startCommand: dotnet out/BankManagement.API.dll
+
+  # Frontend Web Application
+  - type: web
+    name: bank-management-web
+    env: static
+    buildCommand: |
+      cd frontend/web && \
+      npm install && \
+      npm run build
+    staticPublishPath: ./frontend/web/dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://bank-management-api.onrender.com
+    routes:
+      - type: rewrite
+        source: "/*"
+        destination: "/index.html"
+    autoDeploy: true
+    plan: free
+
+databases:
+  - name: bankmanagement-db
+    databaseName: bankmanagement
+    user: bankadmin
+    plan: free
+    version: "14"  # PostgreSQL 14
+
+# Build and deploy settings
+build:
+  baseDir: .
+  dockerfile: ./Dockerfile
+  target: production
+
+# Environment variables for local development
+env:
+  - name: NODE_ENV
+    value: production
+  - name: NPM_CONFIG_PRODUCTION
+    value: "false"
+
+# Health check configuration
+healthChecks:
+  - name: api-health
+    path: /health
+    initialDelaySeconds: 30
+    timeoutSeconds: 10
+    intervalSeconds: 60
+    successThreshold: 1
+    failureThreshold: 3

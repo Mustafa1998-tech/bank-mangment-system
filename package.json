@@ -1,0 +1,107 @@
+{
+  "name": "bank-management-system",
+  "version": "1.0.0",
+  "description": "نظام شامل لإدارة البنك مطور باستخدام .NET 8، SQL Server، و React مع TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docker-compose up -d && docker-compose logs -f",
+    "dev:build": "docker-compose up -d --build",
+    "dev:down": "docker-compose down",
+    "dev:clean": "docker-compose down -v --remove-orphans",
+    "prod": "docker-compose -f docker-compose.prod.yml up -d",
+    "prod:build": "docker-compose -f docker-compose.prod.yml up -d --build",
+    "prod:down": "docker-compose -f docker-compose.prod.yml down",
+    "logs": "docker-compose logs -f",
+    "logs:backend": "docker-compose logs -f backend",
+    "logs:frontend": "docker-compose logs -f frontend",
+    "logs:db": "docker-compose logs -f sqlserver",
+    "status": "docker-compose ps",
+    "health": "docker-compose exec backend curl -f http://localhost:80/health && docker-compose exec frontend curl -f http://localhost:80/health",
+    "backup:db": "docker-compose exec sqlserver /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P BankSystem@2024 -Q \"BACKUP DATABASE BankManagementDB TO DISK = '/var/opt/mssql/backup/bank_backup_$(date +%Y%m%d_%H%M%S).bak'\"",
+    "restore:db": "echo 'Please specify backup file: npm run restore:db -- backup_file.bak'",
+    "clean:images": "docker image prune -f",
+    "clean:volumes": "docker volume prune -f",
+    "clean:all": "docker system prune -af --volumes",
+    "setup": "npm run setup:backend && npm run setup:frontend",
+    "setup:backend": "cd backend/BankManagement.API && dotnet restore && dotnet build",
+    "setup:frontend": "cd frontend/web && npm install",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend/BankManagement.Tests && dotnet test",
+    "test:frontend": "cd frontend/web && npm test",
+    "lint": "npm run lint:frontend",
+    "lint:frontend": "cd frontend/web && npm run lint",
+    "format": "npm run format:frontend",
+    "format:frontend": "cd frontend/web && npm run format",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend/BankManagement.API && dotnet publish -c Release -o publish",
+    "build:frontend": "cd frontend/web && npm run build",
+    "start:backend": "cd backend/BankManagement.API && dotnet run",
+    "start:frontend": "cd frontend/web && npm start",
+    "migration:add": "cd backend/BankManagement.API && dotnet ef migrations add",
+    "migration:update": "cd backend/BankManagement.API && dotnet ef database update",
+    "migration:remove": "cd backend/BankManagement.API && dotnet ef migrations remove",
+    "seed:data": "cd backend/BankManagement.API && dotnet run --seed-data",
+    "ssl:generate": "mkdir -p nginx/ssl && openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx/ssl/nginx.key -out nginx/ssl/nginx.crt -subj '/C=SA/ST=Riyadh/L=Riyadh/O=Bank Management/CN=localhost'",
+    "docs:api": "echo 'API Documentation available at: http://localhost:5000/swagger'",
+    "docs:serve": "echo 'Documentation server not implemented yet'",
+    "monitor": "docker stats",
+    "update": "git pull && npm run dev:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/bank-management-system.git"
+  },
+  "keywords": [
+    "bank",
+    "management",
+    "system",
+    "dotnet",
+    "react",
+    "typescript",
+    "sql-server",
+    "docker",
+    "banking",
+    "financial",
+    "arabic",
+    "rtl"
+  ],
+  "author": {
+    "name": "Bank Management Team",
+    "email": "team@bankmanagement.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/bank-management-system/issues"
+  },
+  "homepage": "https://github.com/your-username/bank-management-system#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0",
+    "docker": ">=20.10.0",
+    "docker-compose": ">=2.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "wait-on": "^7.2.0"
+  },
+  "config": {
+    "ports": {
+      "frontend": 3000,
+      "backend": 5000,
+      "database": 1433,
+      "nginx": 80,
+      "nginx-ssl": 443
+    }
+  },
+  "directories": {
+    "backend": "./backend",
+    "frontend": "./frontend",
+    "docs": "./docs",
+    "scripts": "./scripts"
+  },
+  "workspaces": [
+    "frontend/web"
+  ]
+}
+
