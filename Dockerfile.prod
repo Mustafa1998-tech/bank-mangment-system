@@ -3,14 +3,14 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy solution and project files
-COPY ["BankManagement.API/BankManagement.API.csproj", "BankManagement.API/"]
-RUN dotnet restore "BankManagement.API/BankManagement.API.csproj"
+COPY ["backend/BankManagement.API/BankManagement.API.csproj", "backend/BankManagement.API/"]
+RUN dotnet restore "backend/BankManagement.API/BankManagement.API.csproj"
 
 # Copy everything else
 COPY . .
 
 # Build and publish
-RUN dotnet publish "BankManagement.API/BankManagement.API.csproj" -c Release -o /app/publish \
+RUN dotnet publish "backend/BankManagement.API/BankManagement.API.csproj" -c Release -o /app/publish \
     --no-restore \
     --no-build \
     --nologo \

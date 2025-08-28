@@ -2,35 +2,65 @@ name: .NET
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
+
+env:
+  DOTNET_VERSION: '8.0.x'
 
 jobs:
   build:
-    name: Build and Test
+    name: Build and Publish
     runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: bankmanagement
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
     - uses: actions/checkout@v3
     
-    - name: Setup .NET
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 8.0.x
-    
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+        
     - name: Restore dependencies
       working-directory: ./backend/BankManagement.API
       run: dotnet restore
-    
+      
     - name: Build
       working-directory: ./backend/BankManagement.API
       run: dotnet build --no-restore --configuration Release
-    
+      
     - name: Test
       working-directory: ./backend/BankManagement.API
       run: dotnet test --no-build --verbosity normal --configuration Release
-    
+      
     - name: Publish
       working-directory: ./backend/BankManagement.API
-      run: dotnet publish -c Release -o ../../publish --no-restore
+      run: |
+        dotnet publish \
+          --no-restore \
+          --no-build \
+          --configuration Release \
+          --output ../../publish
+          
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: published-app
+        path: publish/
+        retention-days: 1
