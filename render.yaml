@@ -3,7 +3,7 @@ services:
   - type: web
     name: bank-management-api
     env: docker
-    dockerfile: ./backend/BankManagement.API/Dockerfile
+    dockerfile: Dockerfile.prod
     dockerContext: .
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
@@ -26,6 +26,13 @@ services:
     plan: free
     numInstances: 1
     healthCheckPath: /health
+    buildCommand: |
+      docker build -t bank-management-api -f Dockerfile.prod .
+    startCommand: |
+      docker run -p 10000:10000 \
+        -e ASPNETCORE_ENVIRONMENT=Production \
+        -e ASPNETCORE_URLS=http://*:10000 \
+        bank-management-api
 
   # Frontend Web Application
   - type: web
